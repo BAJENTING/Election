@@ -10,11 +10,16 @@
     }
 
     $posID = $_GET['posID'];
+    $posStat = $_GET['posStat'];
 
+    if ($posStat === 'open'){
     $sql = "UPDATE position set posStat = 'closed' where posID = '$posID'";
+    } else {
+    $sql = "UPDATE position set posStat = 'open' where posID = '$posID'";
+    }
     if ($conn->query($sql) === TRUE ){
         echo "<script>
-            alert('Deactivated Successfully');
+            alert('Status Changedg Successfully');
             window.location.href = 'viewPosition.php';
               </script>";
     } else {
