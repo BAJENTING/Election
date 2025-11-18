@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+
+th {
+    background-color: darkkhaki;
+    color: white;
+}
+td {
+    background-color: beige;
+    color: black;
+}
+
+table {
+    border: 100%;
+}
+
+#editBtn {
+    padding: 15px 32px;
+    background-color: khaki;
+    text-decoration: none;
+    border: none;
+
+}
+
+#deactBtn{
+    padding: 15px 32px;
+    background-color: rgb(202, 53, 53);
+    text-decoration: none;
+    border: none;
+}
+
+#addBtn {
+    margin: 10px;
+    padding: 15px 32px;
+    background-color: seagreen;
+    text-decoration: none;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: darkkhaki;
+    overflow: hidden;
+}
+
+ul li{
+    float: left;
+}
+
+ul li a {
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 15px 32px;
+}
+
+ul li a:hover {
+    background-color: rgb(131, 128, 74);
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+form {
+    background-color: darkkhaki;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2.5%;
+}
+form button {
+    margin: 10px;
+    padding: 15px 32px;
+    border: none;
+    text-decoration: none;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
