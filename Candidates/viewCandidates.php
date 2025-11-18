@@ -54,12 +54,13 @@
                     echo "<td>".$row['candStat']."</td>";
                     echo "<td>
                             <a href = 'editCandidates.php?candID=".$row['candID']."'><button id ='editBtn'>Edit</button></a>
-                            <a href = 'deactCandidates.php?candID=".$row['candID']."'><button id = 'deactBtn'>Deactivate</button></a>
+                            <a href = 'deactCandidates.php?candID=".$row['candID']."&candStat=".$row['candStat']."'><button id = 'deactBtn'>Activate/Deactivate</button></a>
+                            <a href = 'delCandidates.php?candID=".$row['candID']."'><button id = 'delBtn'>Delete</button></a>
                           </td>";
                     echo "</tr>";
                 }
             } else {
-                echo "<tr><td colpadding = 3>No records found</td></tr>";
+                echo "<tr><td colspan = '7'>No records found</td></tr>";
             }
         ?>
     </table>

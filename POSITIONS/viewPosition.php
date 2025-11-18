@@ -50,7 +50,8 @@
                 echo "<td>".$row['posStat']."</td>";
                 echo "<td>
                     <a href='editPosition.php?posID=".$row['posID']."'><button id = 'editBtn'>Edit</button></a>
-                    <a href ='deactPosition.php?posID=".$row['posID']."&posStat=".$row['posStat']."'><button id = 'deactBtn'>Deactivate</button></a>
+                    <a href ='deactPosition.php?posID=".$row['posID']."&posStat=".$row['posStat']."'><button id = 'deactBtn'>Activate/Deactivate</button></a>
+                    <a href = 'delPosition.php?posID=".$row['posID']."'><button id='delBtn'>Del</button></a>
                     </td>";
                 echo "</tr>";
             }

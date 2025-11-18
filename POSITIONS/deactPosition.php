@@ -19,7 +19,7 @@
     }
     if ($conn->query($sql) === TRUE ){
         echo "<script>
-            alert('Status Changedg Successfully');
+            alert('Status Changed Successfully');
             window.location.href = 'viewPosition.php';
               </script>";
     } else {

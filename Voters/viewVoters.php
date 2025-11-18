@@ -55,12 +55,13 @@
                     echo "<td>".$row['voterStat']."</th>";
                     echo "<td>".$row['voted']."</th>";
                     echo "<td><a href = 'editVoters.php?voterID=".$row['voterID']."'><button id='editBtn'>Edit</button></a>
-                              <a href = 'deactVoters.php?voterID=".$row['voterID']."'><button id = 'deactBtn'>Deactivate</button></a>
+                              <a href = 'deactVoters.php?voterID=".$row['voterID']."&voterStat=".$row['voterStat']."'><button id = 'deactBtn'>Activate/Deactivate</button></a>
+                              <a href = 'delVoters.php?voterID=".$row['voterID']."'><button id='delBtn'>Del</button></a>
                           </td>";
                     echo "</tr>";
                 }
             } else {
-                echo "<tr><td colspan = 3>No Records Found</td></tr>";
+                echo "<tr><td colspan = '8'>No Records Found</td></tr>";
             }
         ?>
     </table>

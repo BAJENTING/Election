@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     if ($conn->query($sql)){
         echo "<script>
                 alert ('Added Successfully');
-                windows.location.href = ('viewCandidate.php');
+                window.location.href = 'viewCandidates.php';
               </script>";
     } else {
         echo "Unable to add: ".$conn->error;

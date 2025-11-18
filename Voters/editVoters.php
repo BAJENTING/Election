@@ -14,12 +14,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     $voterFName = $_POST['voterFName'];
     $voterMName = $_POST['voterMName'];
     $voterLName = $_POST['voterLName'];
+    $voterID = $_GET['voterID'];
 
     $sql = "UPDATE voters SET voterPass = '$voterPass', voterFName = '$voterFName', voterMName = '$voterMName', voterLName = '$voterLName' where voterID = '$voterID'";
     if ($conn->query($sql)){
         echo "<script>
             alert('Updated Successfully');
-            window.location.href = '../Voters/viewVoters.php';
+            window.location.href = 'viewVoters.php';
             </script>";
     } else {
         echo "Unable to update: ".$conn->error;

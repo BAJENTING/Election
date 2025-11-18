@@ -10,11 +10,15 @@
     }
 
     $candID = $_GET['candID'];
-
-    $sql = "UPDATE candidates SET candStat = 'closed' WHERE candID = '$candID'";
+    $candStat = $_GET['candStat'];
+    if ($candStat === 'open'){
+        $sql = "UPDATE candidates SET candStat = 'closed' WHERE candID = '$candID'";
+    } else {
+        $sql = "UPDATE candidates SET candStat = 'open' WHERE candID = '$candID'";
+    }
     if ($conn->query($sql)){
         echo "<script>
-                alert ('Deactivated Successfully');
+                alert ('Status Changed Successfully');
                 window.location.href = 'viewCandidates.php';
               </script>";
     } else {
